@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <a href="{% url 'providers:provider-list' %}">Go back to providers</a>
+    <hr />
+    <h1>Are you sure you want to delete this provider?</h1>
+    <form method="post" >
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit</button>
+    </form>  
+{% endblock content %}
