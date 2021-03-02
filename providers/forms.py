@@ -1,10 +1,17 @@
 from django import forms
-from leads.models import Provider
+from django.contrib.auth import get_user_model
+from django.contrib.auth.forms import UserCreationForm
+
+
+User = get_user_model()
 
 
 class ProviderModelForm(forms.ModelForm):
     class Meta:
-        model = Provider
+        model = User
         fields = (
-            'user',
+            'email',
+            'username',
+            'first_name',
+            'last_name'
         )
