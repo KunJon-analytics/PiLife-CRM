@@ -17,7 +17,8 @@ class LeadModelForm(forms.ModelForm):
             "date_of_birth",
             "number_of_people",
             "health_plan",
-            "provider"
+            "provider",
+            "description"
         )
 
 

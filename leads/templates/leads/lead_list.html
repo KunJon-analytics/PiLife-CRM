@@ -49,8 +49,7 @@
               {{ lead.first_name }} {{ lead.last_name }}
             </h2>
             <p class="leading-relaxed text-base">
-              Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-              taxidermy. Gastropub indxgo juice poutine.
+              {{ lead.description }}
             </p>
             <a
               href="{% url 'leads:lead-detail' lead.pk %}"
@@ -102,8 +101,7 @@
               {{ lead.first_name }} {{ lead.last_name }}
             </h2>
             <p class="leading-relaxed text-base">
-              Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-              taxidermy. Gastropub indxgo juice poutine.
+              {{ lead.description }}
             </p>
             <a
               href="{% url 'leads:assign-provider' lead.pk %}"
